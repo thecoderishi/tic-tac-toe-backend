@@ -3,7 +3,7 @@ const app = express()
 const PORT = 4000
 
 app.get('/', (req, res) => {
-  res.status(200).json('tic-tac-toe home')
+  res.status(200).json('tic-tac-toe home update')
 })
 
 app.listen(PORT, () => {
