@@ -1,5 +1,7 @@
 const { Server } = require('socket.io')
-const io = new Server(3000, { cors: { origin: ['http://localhost:5173','https://gobblet-gobbler-online.vercel.app/'] } })
+const port = process.env.PORT || 3000;
+
+const io = new Server(port, { cors: { origin: ['http://localhost:5173','https://gobblet-gobbler-online.vercel.app/'] } })
 
 
 io.on("connection", (socket) => {
